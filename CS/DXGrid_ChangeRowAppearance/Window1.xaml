@@ -1,0 +1,24 @@
+﻿<Window x:Class="DXGrid_ChangeRowAppearance.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" Title="Window1" Height="300" Width="505">
+    <Window.Resources>
+        <Style x:Key="SelectedRowStyle" TargetType="{x:Type dxg:GridRowContent}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=IsSelected}" Value="True">
+                    <Setter Property="Background" Value="Gray" />
+                    <Setter Property="Foreground" Value="White" />
+                </DataTrigger>
+                <Trigger Property="dxg:GridViewBase.IsFocusedRow" Value="True">
+                    <Setter Property="Background" Value="Red" />
+                    <Setter Property="Foreground" Value="White" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <dxg:GridControl x:Name="grid" AutoGenerateColumns="AddNew" SelectionMode="Row">
+            <dxg:GridControl.View>
+                <dxg:TableView AutoWidth="True" ShowGroupPanel="False" AllowGrouping="False" RowStyle="{StaticResource SelectedRowStyle}">
+                </dxg:TableView>
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+    </Grid>
+</Window>
