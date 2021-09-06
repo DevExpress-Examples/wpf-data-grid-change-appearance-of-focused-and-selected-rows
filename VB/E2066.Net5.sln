@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DXGrid_ChangeRowAppearance", "DXGrid_ChangeRowAppearance\DXGrid_ChangeRowAppearance.vbproj", "{01AD0522-6757-4BF6-991E-C7DAC8ABE817}"
+# Visual Studio 16
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DXGrid_ChangeRowAppearance", "DXGrid_ChangeRowAppearance\DXGrid_ChangeRowAppearance.Net5.vbproj", "{01AD0522-6757-4BF6-991E-C7DAC8ABE817}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
