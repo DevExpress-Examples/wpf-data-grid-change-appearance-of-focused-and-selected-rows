@@ -1,21 +1,28 @@
-Imports System.Collections.ObjectModel
+﻿' Developer Express Code Central Example:
+' How to change the appearance of a focused data row and selected rows
+' 
+' This example demonstrates how to use the View's RowStyle property to apply
+' custom styles to focused and selected rows. To identify whether a row is focused
+' and selected, the attached IsFocusedRow and IsSelected properties are used.
+' 
+' You can find sample updates and versions for different programming languages here:
+' http://www.devexpress.com/example=E2066
+
 Imports System.Windows
+Imports System.Collections.Generic
 
 Namespace DXGrid_ChangeRowAppearance
-
-    Public Partial Class Window1
+    Partial Public Class Window1
         Inherits Window
 
         Public Sub New()
-            Me.InitializeComponent()
-            Me.grid.ItemsSource = Products.GetData()
+            InitializeComponent()
+            grid.ItemsSource = Products.GetData()
         End Sub
-
         Public Class Products
-
-            Public Shared Function GetData() As ObservableCollection(Of Product)
-                Dim data As ObservableCollection(Of Product) = New ObservableCollection(Of Product)()
-                data.Add(New Product() With {.ProductName = "Chai", .UnitPrice = 18, .UnitsOnOrder = 10})
+            Public Shared Function GetData() As List(Of Product)
+                Dim data As New List(Of Product)()
+               data.Add(New Product() With {.ProductName = "Chai", .UnitPrice = 18, .UnitsOnOrder = 10})
                 data.Add(New Product() With {.ProductName = "Ipoh Coffee", .UnitPrice = 36.8, .UnitsOnOrder = 12})
                 data.Add(New Product() With {.ProductName = "Outback Lager", .UnitPrice = 12, .UnitsOnOrder = 25})
                 data.Add(New Product() With {.ProductName = "Boston Crab Meat", .UnitPrice = 18.4, .UnitsOnOrder = 18})
@@ -23,14 +30,10 @@ Namespace DXGrid_ChangeRowAppearance
                 Return data
             End Function
         End Class
-
         Public Class Product
-
-            Public Property ProductName As String
-
-            Public Property UnitPrice As Double
-
-            Public Property UnitsOnOrder As Integer
+            Public Property ProductName() As String
+            Public Property UnitPrice() As Double
+            Public Property UnitsOnOrder() As Integer
         End Class
     End Class
 End Namespace
