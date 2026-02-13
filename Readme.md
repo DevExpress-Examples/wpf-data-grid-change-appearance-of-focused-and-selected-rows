@@ -28,7 +28,7 @@ This example demonstrates how to use the View's [RowStyle](https://docs.devexpre
 * [WPF Data Grid - Change the Appearance of Focused Rows and Cells](https://github.com/DevExpress-Examples/how-to-change-the-appearance-of-a-focused-data-row-and-a-focused-cell-e1627)
 * [WPF Data Grid - Change the Appearance of Focused and Selected Cells](https://github.com/DevExpress-Examples/how-to-change-selected-cells-appearance-when-gridcontrols-multi-cell-selection-is-enabled-e2568)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-change-appearance-of-focused-and-selected-rows&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-change-appearance-of-focused-and-selected-rows&~~~was_helpful=no)
 
